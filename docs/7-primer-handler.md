@@ -16,11 +16,11 @@ Después de la creación del botón en nuestro código, creamos el EventHandler 
 Ya tenemos nuestro EventHandler creado y asignado al boton, mediante el método **setOnAction**.
 Ahora, nuestro EventHandler tiene que tener un método, que es el que se ejecutará en el momento del click sobre el botón.
 ```java
-			boton.setOnAction(   new EventHandler<ActionEvent>() {
-			    @Override public void handle(ActionEvent e) {
+		boton.setOnAction(   new EventHandler<ActionEvent>() {
+			@Override public void handle(ActionEvent e) {
 
-			    }
-			});
+			}
+		});
 ```
 ## Programamos lo que el Handler hará
 Ahora solo queda llenar el método *handle* con lo que queremos que haga la aplicación al hacer click en el botón.
@@ -30,12 +30,12 @@ JavaFX tiene una clase que se llama **FileChooser**. Esta clase nos permite crea
 Lo creamos y lo llamamos *selectorDeArchivo*.  
 Luego le cambiamos el título que tendra la ventana por "Abrí el archivo Excel".
 ```java
-			boton.setOnAction(new EventHandler<ActionEvent>() {
-			    @Override public void handle(ActionEvent e) {
-			    	FileChooser selectorDeArchivo = new FileChooser();
+		boton.setOnAction(new EventHandler<ActionEvent>() {
+			@Override public void handle(ActionEvent e) {
+				FileChooser selectorDeArchivo = new FileChooser();
 				selectorDeArchivo.setTitle("Abri el archivo Excel");				
-			    }
-			});
+			}
+		});
 ```
 ### File
 Ahora, a nosotros nos intereza que el **FileChooser** nos de la información del archivo que el usuario escoge al abrirse la ventana.  
