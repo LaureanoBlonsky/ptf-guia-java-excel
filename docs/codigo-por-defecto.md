@@ -63,9 +63,13 @@ Los bloques Try/Catch sirven para indicarle a la computadora que ejecute todo lo
 ### Border Pane
 Se declara y crea el objeto con nombre “root”, que es de tipo *BorderPane*. Entonces, root es nuestro [RootPane](programar_javafx.html).  
 Es el panel en donde se van a poner los distintos elementos visuales.
-Linea 13: se declara y crea el objeto de nombre “scene”, que es del tipo “Scene”. Es nuestra primer Scene (escenario). En el constructor se le pasa dos veces 400, para indicar que es de tamaño 400px de alto y 400px de ancho, y se le pasa también el objeto “root”, para indicarle que ése será su RootPane.
-Linea 14: mediante el método getStylessheets().add(), se le agrega la hoja de estilos “application.css” al objeto “scene”. Las hojas de estilos sirven para definir estilos y efectos visuales para la interfaz. Por ejemplo, en la hoja de estilos podemos poner que las letras de los textos sean de color rojo.
-Linea 15: al objeto primaryStage se le asigna, mediante el método setScene, la escena “scene”.
+### Scene
+Se declara y crea el objeto de nombre “scene”, que es del tipo *Scene*. Es nuestra primer [Scene (escena)](programar_javafx.html). En el constructor se le pasa dos veces 400, para indicar que es de tamaño 400px de alto y 400px de ancho, y se le pasa también el objeto “root”, para indicarle que ése será su RootPane.
+### CSS
+Mediante el método getStylessheets().add(), se le agrega la hoja de estilos “application.css” al objeto “scene”. Las hojas de estilos sirven para definir estilos y efectos visuales para la interfaz. Por ejemplo, en la hoja de estilos podemos poner que las letras de los textos sean de color rojo.
+
+### Asignación del *scene* creado
+Al objeto *primaryStage*, que es nuestra *[stage](programar_javafx.html)* (escenario) se le asigna, mediante el método setScene, la escena “scene”.
 Linea 16: se llama al método show del objeto primaryStage. Es en este momento en donde la aplicación aparece en pantalla, mostrando la ventana (por el momento vacía).
 Linea 17: declaración del bloque Catch.
 Linea 18: se ejecuta el método “printStackTrace” del objeto “e”, que hace que se muestre el error, en caso de producirse uno.
