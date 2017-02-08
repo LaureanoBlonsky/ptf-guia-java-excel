@@ -1,5 +1,5 @@
-#Conceptos previos!
-##¿Que es Java?
+# Conceptos previos!  
+## ¿Que es Java?
  
  Java es un lenguaje de programación con el que podemos realizar muchos tipos de programas. En la actualidad es un lenguaje muy extendido y cada vez cobra más importancia tanto en el ámbito de Internet como en la informática en general. 
 
@@ -10,7 +10,7 @@
 **Ver mas sobre Java: https://articulos.softonic.com/que-es-java**  
 *(link de la primer página de Google bajo la búsqueda de “que es java y para que sirve”)*
 
-##¿Que significa que sea Orientado a Objetos?
+## ¿Que significa que sea Orientado a Objetos?
 
  La programación Orientada a objetos (POO) es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación. 
 
@@ -27,7 +27,7 @@
 **Un poco de historia!: http://sis324loo.blogspot.com.ar/**  
 *(link de la primer página de Google bajo la búsqueda de “que es un lenguaje orientado a objetos”)*
 
-##¿Que vamos a utilizar?
+## ¿Que vamos a utilizar?
 
 Java: Nuestro programa va a estar escrito con el código de base en lenguaje Java. Con este lenguaje vamos a escribir la estructura y base del programa, y especificar sus formas de funcionar y las tareas que realizará con las planillas Excel.
 
@@ -38,7 +38,7 @@ JavaFX: Para crear la interfaz de usuario, es decir los componentes en pantalla 
 ApachePOI: Para programar las operaciones que nuestra aplicación va a hacer con los archivos Excel, vamos a usar la librería ApachePOI.
 
 
-##¿Que es una librería?
+## ¿Que es una librería?
 
  Programar de cero, nosotros, el manejo de los archivos Excel sería muy complejo. Si lo quisiéramos hacer, tendríamos que codificar precisamente cada detalle de la operación: apertura de los archivos, lectura de su información, decodificación de los datos conociendo como están escritos dentro de un archivo Excel, etc., etc., etc. Y deberíamos conocer exáctamente como funcionan los archivos Excel casi en su totalidad. 
 
