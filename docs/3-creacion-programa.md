@@ -8,7 +8,7 @@ Para arrancar, vamos a la carpeta en donde descomprimimos el Eclipse y le damos 
 
  A continuación, el Eclipse nos va a pedir que pongamos la ruta del Workspace que vamos a usar.
  
- El Workspace no es mas que la carpeta en donde se van a guardar nuestros desarrollos.
+ **El Workspace es mas que la carpeta en donde se van a guardar nuestros programas en desarrollo**.
 
  Pueden dejar la que figura por defecto o cambiarla a donde deseen.
 
