@@ -1,13 +1,13 @@
-## Instalación de nuestro entorno de trabajo
-# Java JDK
+# Instalación de nuestro entorno de trabajo
+## Java JDK
 
  Como explicamos en la sección ¿Que es Java?, Java necesita de una Máquina Virtual creada para ser intermediaria entre los programas escritos en ese lenguaje y el Sistema Operativo donde corren (Windows, Linux, etc). 
 
  Esta Máquina Virtual viene contenida y se instala con un programa que se llama JRE (Java Runtime Environment) (Entorno de ejecución Java). Eso significa, que si en nuestro Windows (o Linux, Mac, etc) instalamos el JRE podemos ejecutar y correr aplicaciones Java.
 
- Ahora, un momento! Este JRE tiene únicamente las herramientas que necesita el Sistema Operativo para abrir y correr una aplicación ya hecha en Java, pero no tiene todas las herramientas necesarias para crearlas, escribirlas y programarlas (lo que nosotros vamos a hacer!).
+ Ahora, un momento! Este JRE tiene únicamente las herramientas que necesita el Sistema Operativo para abrir y correr una aplicación ya hecha en Java, **pero no tiene todas las herramientas necesarias para crearlas, escribirlas y programarlas** (lo que nosotros vamos a hacer!).
 
- Por esto, lo que nosotros necesitamos descargar es el llamado JDK (Java Development Kit) (Kit de Desarrollo de Java en castellano)
+ Por esto, lo que nosotros necesitamos descargar es el llamado **JDK (Java Development Kit)** (Kit de Desarrollo de Java en castellano)
 
 Buscamos la última versión desde la página oficial:
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -20,13 +20,13 @@ jdk-8u121-windows-x64.exe
 **Mas sobre JDK y JRE: http://coudmonqui.blogspot.com.ar/2013/05/que-es-la-jvm-el-jre-y-el-jdk-y-con-que.html**  
 *(link de la primer página de Google bajo la búsqueda de “diferencias jre y jdk”)*
 
-# Eclipse
+## Eclipse
 
- Solo nos falta una cosa mas: nuestro programa IDE (integrated development environment) (Entorno de Desarrollo Integrado en español).
+ Solo nos falta una cosa mas: nuestro programa **IDE** (integrated development environment) (Entorno de Desarrollo Integrado en español).
 
  Como se explica en el link que a continuación cito, un IDE es un programa que contiene un conjunto de herramientas que nos hacen mas fácil la tarea de programar. 
 
- Únicamente con el JDK y un editor de texto cualquiera, como el Bloc de Notas de Windows, podríamos escribir enteramente nuestros programas en Java. El tema, es que sería muy engorroso porque el Bloc de Notas de Windows no nos va a avisar si estamos escribiendo algo mal, y tampoco nos va a resaltar en distintos colores las palabras de distinto tipo.
+ Únicamente con el JDK y un editor de texto cualquiera, como el Bloc de Notas de Windows, podríamos escribir enteramente nuestros programas en Java. El tema, es que sería muy engorroso porque **el Bloc de Notas de Windows no nos va a avisar si estamos escribiendo algo mal, y tampoco nos va a resaltar en distintos colores las palabras de distinto tipo**.
 
  Además, los IDEs suelen proporcionar herramientas gráficas para acelerar el diseño visual de la interfaz.
 
