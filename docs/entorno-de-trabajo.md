@@ -1,5 +1,5 @@
-##Instalación de nuestro entorno de trabajo
-#Java JDK
+## Instalación de nuestro entorno de trabajo
+# Java JDK
 
  Como explicamos en la sección ¿Que es Java?, Java necesita de una Máquina Virtual creada para ser intermediaria entre los programas escritos en ese lenguaje y el Sistema Operativo donde corren (Windows, Linux, etc). 
 
@@ -20,7 +20,7 @@ jdk-8u121-windows-x64.exe
 **Mas sobre JDK y JRE: http://coudmonqui.blogspot.com.ar/2013/05/que-es-la-jvm-el-jre-y-el-jdk-y-con-que.html**  
 *(link de la primer página de Google bajo la búsqueda de “diferencias jre y jdk”)*
 
-#Eclipse
+# Eclipse
 
  Solo nos falta una cosa mas: nuestro programa IDE (integrated development environment) (Entorno de Desarrollo Integrado en español).
 
