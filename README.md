@@ -1,5 +1,27 @@
 ## Bienvenido a la Guía de Java y Excel!
 
+asdasdddasd 
+
+You can use the [editor on GitHub](https://github.com/LaureanoBlonsky/ptf-guia-java-excel/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+Bienvenido/a a la Guía de desarrollo de una aplicación de escritorio Java para Windows, Linux o Mac con manejo de planillas Excel!
+
+ Vamos a construir juntos una aplicación de escritorio, con el lenguaje Java, que nos permita Leer, Crear y Modificar planillas Excel.
+
+ Nos meteremos con los siguientes conceptos:
+- Java como lenguaje Orientado a Objetos.
+- Construcción de una interfaz de usuario con JavaFX.
+- Utilización de Librerías de terceros para agregar funcionalidades a nuestra aplicación: en nuestro caso, el manejo de planillas Excel.
+
+ Desarrollaremos en el siguiente orden:
+1. Vamos a crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora.
+2. Vamos a buscar alguna palabra o número dentro del Excel e informar su ubicación.
+3. Vamos a reemplazar una palabra por otra dentro de uno o mas Excels.
+4. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.
+
+Empecemos!
+
+
 You can use the [editor on GitHub](https://github.com/LaureanoBlonsky/ptf-guia-java-excel/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
