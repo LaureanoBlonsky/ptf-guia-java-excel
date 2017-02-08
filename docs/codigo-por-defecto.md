@@ -29,7 +29,6 @@ public class Main extends Application {
 		launch(args);
 	}
 }
-
 ```
 ### Package
 En la primer linea, simplemente se indica el package al cual la clase (Main) pertenece. (Mas de esto en un rato).  
@@ -56,22 +55,61 @@ public class Main extends Application {
 Se define el método *start*. Es el método que se va a ejecutar cuando la aplicación se inicie y contiene el principio de nuestro código.  
 El *Override* significa que reemplaza al método *start* que exista en la clase que extiende ésta. Esta clase *Main* extiende de la clase *Application*.  
 Entonces, al usar *Override*, le decimos al compilador que reemplace el método *start* de la clase *Application* por el nuestro.
+```java
+	@Override
+	public void start(Stage primaryStage) {
+
+	}
+```
 
 ### Try / Catch
 Los bloques Try/Catch sirven para indicarle a la computadora que ejecute todo lo que está “dentro del Try” (es decir, las lineas 12 a 16), y si algo falla, que ejecute lo que está “dentro del Catch”. Esto sirve para asegurarse de que si algo falla, siempre se ejecute lo que "está dentro del catch", que es la encargada de mostrar el error.
+```java
+		try {
+			//dentro del Try
+		} catch(Exception e) {
+			//dentro del Catch
+		}
+```
+
 
 ### Border Pane
-Se declara y crea el objeto con nombre “root”, que es de tipo *BorderPane*. Entonces, root es nuestro [RootPane](programar_javafx.html).  
+Se declara y crea el objeto con nombre “root”, que es de tipo **BorderPane**. Entonces, root es nuestro **[RootPane](programar_javafx.html)**.  
 Es el panel en donde se van a poner los distintos elementos visuales.
+```java
+			BorderPane root = new BorderPane();
+```
+
 ### Scene
-Se declara y crea el objeto de nombre “scene”, que es del tipo *Scene*. Es nuestra primer [Scene (escena)](programar_javafx.html). En el constructor se le pasa dos veces 400, para indicar que es de tamaño 400px de alto y 400px de ancho, y se le pasa también el objeto “root”, para indicarle que ése será su RootPane.
-### CSS
-Mediante el método getStylessheets().add(), se le agrega la hoja de estilos “application.css” al objeto “scene”. Las hojas de estilos sirven para definir estilos y efectos visuales para la interfaz. Por ejemplo, en la hoja de estilos podemos poner que las letras de los textos sean de color rojo.
+Se declara y crea el objeto de nombre “scene”, que es del tipo **Scene**. Es nuestra primer **[Scene](programar_javafx.html)**(escena). En el constructor se le pasa dos veces 400, para indicar que es de tamaño 400px de alto y 400px de ancho, y se le pasa también el objeto “root”, para indicarle que ése será su RootPane.
+```java
+			Scene scene = new Scene(root,400,400);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+```
+Mediante el método **getStylessheets().add()**, se le agrega la hoja de estilos **application.css** al objeto **scene**. Las hojas de estilos sirven para definir estilos y efectos visuales para la interfaz. Por ejemplo, en la hoja de estilos podemos poner que las letras de los textos sean de color rojo.
 
 ### Asignación del *scene* creado
-Al objeto *primaryStage*, que es nuestra *[stage](programar_javafx.html)* (escenario) se le asigna, mediante el método setScene, la escena “scene”.
-Linea 16: se llama al método show del objeto primaryStage. Es en este momento en donde la aplicación aparece en pantalla, mostrando la ventana (por el momento vacía).
-Linea 17: declaración del bloque Catch.
-Linea 18: se ejecuta el método “printStackTrace” del objeto “e”, que hace que se muestre el error, en caso de producirse uno.
-Linea 22: declaración del método main. Es el primer método que se ejecuta al iniciar la aplicación.
-Linea 23: se ejecuta el método “launch”. Éste método dispara toda una serie de tareas internas de Java para preparar toda la aplicaicón, que terminan llamando y ejecutando al método “start” de la linea 10, en el cual nosotros comenzamos a armar la aplicación con el código dentro de ese método.
+Al objeto **primaryStage**, que es nuestra **[stage](programar_javafx.html)** (escenario) se le asigna, mediante el método setScene, la escena “scene”.
+```java
+			primaryStage.setScene(scene);
+			primaryStage.show();
+```
+Se llama al método show del objeto **primaryStage**. Es en este momento en donde la aplicación aparece en pantalla, mostrando la ventana (por el momento vacía).
+### **Catch**, por si algo sale mal...
+Declaración del bloque Catch.
+Si dentro de las sentencias del bloque **Try** sucede algún error, se ejecuta el método **printStackTrace** del objeto **e**, que hace que se muestre el error por la salida de texto del aplicativo.
+```java
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+```
+
+### El método **main**
+Declaración del método main. Es el primer método que se ejecuta al iniciar la aplicación.
+
+```java
+	public static void main(String[] args) {
+		launch(args);
+	}
+```
+Se ejecuta el método “launch”. Éste método dispara toda una serie de tareas internas de Java para preparar toda la aplicaicón, que terminan llamando y ejecutando al método “start” de la linea 10, en el cual nosotros comenzamos a armar la aplicación con el código dentro de ese método.
