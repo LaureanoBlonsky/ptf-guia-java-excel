@@ -1,5 +1,5 @@
 # Nuestra primer Interfaz
-## Intentemos hacer lo siguiente:  
+## Veremos como hacer lo siguiente:  
 ![Imagen de interfaz](images/app.png)
 ## Armemos el código!
 ### Imports
