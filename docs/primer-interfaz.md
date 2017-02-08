@@ -101,23 +101,10 @@ public class Main extends Application {
 
 			root.setAlignment(Pos.CENTER);
 			root.setSpacing(3);
-
-			boton.setOnAction(new EventHandler<ActionEvent>() {
-			    @Override public void handle(ActionEvent e) {
-			    	FileChooser selectorDeArchivo = new FileChooser();
-					selectorDeArchivo.setTitle("Abri el archivo Excel");
-					selectorDeArchivo.getExtensionFilters().addAll(
-							new ExtensionFilter("Archivos Excel", "*.xls","*.xlsx")							
-							);
-					File archivoSeleccionado = selectorDeArchivo.showOpenDialog(primaryStage);
-					if (archivoSeleccionado != null) {
-					   cajonDeTexto.setText(archivoSeleccionado.getAbsolutePath());
-					}
-			    }
-			});
-
+			
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			
 			primaryStage.setTitle("ExcelPTF - Utilidad para Excels!");
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -127,11 +114,8 @@ public class Main extends Application {
 		}
 	}
 
-
-
 	public static void main(String[] args) {
 		launch(args);
 	}
 }
-
 ```
