@@ -3,20 +3,21 @@
  
  Java es un lenguaje de programación con el que podemos realizar muchos tipos de programas. En la actualidad es un lenguaje muy extendido y cada vez cobra más importancia tanto en el ámbito de Internet como en la informática en general. 
 
- Una de las principales características por las que Java se ha hecho muy famoso es que es un lenguaje independiente de la plataforma. Eso quiere decir que si hacemos un programa en Java podrá funcionar en casi cualquier ordenador del mercado. Es una ventaja significativa para los desarrolladores de software, pues antes tenían que hacer un programa para cada sistema operativo, por ejemplo Windows, Linux, Apple, etc. Esto se consigue porque se ha creado una “Máquina Virtual de Java” para cada sistema que hace de puente entre el sistema operativo y el programa de Java y posibilita que este último se entienda perfectamente.
+ Una de las principales características por las que Java se ha hecho muy famoso es que es un lenguaje independiente de la plataforma. Eso quiere decir que si hacemos un programa en Java podrá funcionar en casi cualquier computadora del mercado.  
+ Es una ventaja significativa para los desarrolladores de software, porque sino se tiene que hacer un programa para cada sistema operativo, por ejemplo Windows, Linux, Apple, etc. Esto se consigue porque se ha creado una “Máquina Virtual de Java” para cada sistema opreativo que hace de puente entre el sistema operativo y el programa de Java y posibilita que este último se entienda perfectamente.
 
- La independencia de plataforma es una de las razones por las que Java es interesante para Internet, ya que muchas personas deben tener acceso con ordenadores distintos. Pero no se queda ahí, Java está desarrollándose incluso para distintos tipos de dispositivos además del ordenador como móviles, agendas y en general para cualquier cosa que se le ocurra a la industria.
+ La independencia de plataforma es una de las razones por las que Java es interesante para Internet, ya que muchas personas deben tener acceso con computadoras distintos. Pero no se queda ahí, Java está desarrollándose incluso para distintos tipos de dispositivos además de las computadoras como móviles, electrodomésticos, autos, robots y en general para cualquier cosa que se le ocurra a la industria.
 
 **Ver mas sobre Java: https://articulos.softonic.com/que-es-java**  
 *(link de la primer página de Google bajo la búsqueda de “que es java y para que sirve”)*
 
-## ¿Que significa que sea Orientado a Objetos?
+## ¿Que significa que Java sea "Orientado a Objetos"?
 
  La programación Orientada a objetos (POO) es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación. 
 
  Con la POO tenemos que aprender a pensar las cosas de una manera distinta, para escribir nuestros programas en términos de objetos, propiedades y métodos.
 
- Esta guía no pretende profundizar en estos fundamentos, por lo que si no los conoces, consultáselos a tu mentor o visitá los siguientes links!:
+ Esta guía no pretende profundizar en estos fundamentos, pero siempre que necesitemos conocer algo de ellos lo vamos a hacer notar y vamos a tener algún link externo o pequeña explicación para que no se pierda el hilo.
 
 **Pequeña introducción a la POO: http://www.desarrolloweb.com/articulos/499.php**  
 *(link de la primer página de Google bajo la búsqueda de “que es un lenguaje orientado a objetos”)*
@@ -29,13 +30,13 @@
 
 ## ¿Que vamos a utilizar?
 
-Java: Nuestro programa va a estar escrito con el código de base en lenguaje Java. Con este lenguaje vamos a escribir la estructura y base del programa, y especificar sus formas de funcionar y las tareas que realizará con las planillas Excel.
+**Java**: Nuestro programa va a estar escrito con el código de base en lenguaje Java. Con este lenguaje vamos a escribir la estructura y base del programa, y especificar sus formas de funcionar y las tareas que realizará con las planillas Excel.
 
-Eclipse: Nuestro Entorno de trabajo va a ser el Eclipse. Es el programa editor donde vamos a escribir el código de nuestra aplicación.
+**Eclipse**: Nuestro Entorno de trabajo va a ser el Eclipse. Es el programa editor donde vamos a escribir el código de nuestra aplicación.
 
-JavaFX: Para crear la interfaz de usuario, es decir los componentes en pantalla (botones, tablas, cajones de texto, ventanas, mensajes hacia el usuario, etc.) vamos a usar una librería llamada JavaFX.
+**JavaFX**: Para crear la interfaz de usuario, es decir los componentes en pantalla (botones, tablas, cajones de texto, ventanas, mensajes hacia el usuario, etc.) vamos a usar una librería llamada JavaFX.
 
-ApachePOI: Para programar las operaciones que nuestra aplicación va a hacer con los archivos Excel, vamos a usar la librería ApachePOI.
+**ApachePOI**: Para programar las operaciones que nuestra aplicación va a hacer con los archivos Excel, vamos a usar la librería ApachePOI.
 
 
 ## ¿Que es una librería?
