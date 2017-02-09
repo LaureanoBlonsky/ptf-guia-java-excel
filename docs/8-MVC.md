@@ -2,7 +2,7 @@
 En la programación tenemos siempre muchísima libertad para escribir las cosas a nuestra manera.  
 Por ejemplo, hay infinitas formas de escribir la misma aplicación que estamos haciendo nosotros en esta Guía.  
 Un simple ejemplo podrían ser los nombres de las variables. Yo podría declarar la variable *cajonDeTexto* de varias formas:  
-```java
+```java  
 TextField cajonDeTexto = new TextField();  
 TextField CAJONDETEXTo = new TextField();  
 TextField cAjOndEtEXto = new TextField();  
