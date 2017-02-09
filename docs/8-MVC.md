@@ -258,5 +258,3 @@ Pero no!, queremos que todo esté ordenado, así que creamos un método para cad
 ### Conclusión  
 Ahora si... tenemos todo ordenado y listo para seguir construyendo nuestra aplicación sobre una base ahora mas clara!  
 Probá la aplicación. No deberíamos ver ninguna diferencia en el resultado para el usuario. Solo modificamos la organización del código, pero el producto debe ser igual.  
-
-
