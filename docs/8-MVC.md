@@ -1,13 +1,13 @@
-# Buenas practicas
+# Buenas practicas  
 En la programación tenemos siempre muchísima libertad para escribir las cosas a nuestra manera.  
 Por ejemplo, hay infinitas formas de escribir la misma aplicación que estamos haciendo nosotros en esta Guía.  
 Un simple ejemplo podrían ser los nombres de las variables. Yo podría declarar la variable *cajonDeTexto* de varias formas:  
 ```java
-TextField cajonDeTexto = new TextField();
-TextField CAJONDETEXTo = new TextField();
-TextField cAjOndEtEXto = new TextField();
+TextField cajonDeTexto = new TextField();  
+TextField CAJONDETEXTo = new TextField();  
+TextField cAjOndEtEXto = new TextField();  
 ```
-## Convenciones
+## Convenciones  
 Cualquiera de las formas escritas arriba funcionan perfectamente (y no son las únicas). Pero imaginemos un programa escrito con distintas combinaciones de esas para las variables.  
 Funcionaría, seguro, pero sería dificil de leer, ya que los nombres no tendrían una forma de escribirse común.  
 Por esto, existen "convenciones". Las convenciones son acuerdos entre los programadores, para usar un mismo estilo a la hora de programar, así todo es mas claro y se facilita la tarea de trabajar en equipo (o leer tu propio código un año despues!).  
