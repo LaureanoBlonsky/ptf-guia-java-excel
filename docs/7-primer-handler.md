@@ -132,7 +132,6 @@ public class Main extends Application {
 		launch(args);
 	}
 }
-
 ```
 ## Resultado
 Si hicimos todo bien, deberíamos ver la ventana al hacer click en el *boton* y luego de seleccionar un archivo, ver su ruta en el *cajonDeTexto*.  
