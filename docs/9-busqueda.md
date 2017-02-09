@@ -19,7 +19,8 @@ Vamos a hacerlo muy sensillo. A nuestra clase **PanelSeleccionArchivo** le agreg
 2. Un objeto de tipo **Button** que llamaremos *botonBuscar*.  
 
 Para eso, primero, en la primer parte de la clase **PanelSeleccionArchivo**, en el mismo lugar donde tenemos los demas componentes declarados, agregamos los nuevos:  
-```java
+
+```java  
 public class PanelSeleccionArchivo extends HBox{
 
 	Label texto;
