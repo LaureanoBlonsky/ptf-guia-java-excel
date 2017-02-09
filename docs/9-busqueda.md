@@ -1,6 +1,6 @@
 # Búsqueda dentro de un Excel  
 
-Recordemos lo que nos propusimos:
+Recordemos lo que nos propusimos:  
 1. Crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora. **(HECHO!)**  
 2. **Vamos a buscar alguna palabra o número dentro del Excel e informar su ubicación.**  
 3. Vamos a reemplazar una palabra por otra dentro de uno o mas Excels.  
@@ -93,3 +93,38 @@ Comparemos como es el código del **Handler** que habíamos escrito para *boton*
 ```  
 
 Que significa? Que cuando uno haga click en el *botonBuscar*, la acción que se disparará será ejecutar el método llamado *buscar*.  
+No es mas corto de escribir, cómodo y ordenado? De eso se tratan las buenas prácticas!  
+
+Agreguemos entonces el método *buscar*, para después llenarlo con el código necesario para la búsqueda:  
+
+```java
+	private void buscar(){
+	
+	}	
+```  
+
+### Búsqueda  
+
+Dentro del método *buscar* ya podríamos escribir el código necesario para la apertura del archivo y búsqueda. Pero... podríamos ser mas ordenados!  
+Imaginemos que nuestra aplicación crece y crece, y ya tiene 20 pantallas, y todas las pantallas acceden a archivos Excel. Y de pronto alguien nos cuenta que hay una forma mejor de abrir los Excel, o que la forma que usábamos no sirve para un tipo nuevo de Excel que acaba de salir. Tendríamos que abrir cada una de las 20 clases y modificarlas una por una con la nueva forma.  
+Seguro que en alguno la pifiamos, además de ser un trabajo aburrido y repetitivo...  
+Entonces, que hacemos? Otra vez, ordenamos y separamos las cosas en otra clase.  
+
+### ExcelHelper  
+
+#### Descargamos Apache POI  
+
+Al comienzo habíamos hablado sobre la librería Apache POI
+Vamos a crear una clase que llamaremos **ExcelHelper**. Le podemos pner el nombre que queramos, pero le ponemos así porque es una clase que nos va a ayudar (help en ingles) en todo lo que necesitemos hacer con Excels.  
+La creamos:  
+
+```java
+package application;
+
+public class ExcelHelper {
+
+	
+}
+```  
+
+Ahora, creamos un método que va a ser el encargado de buscar 
