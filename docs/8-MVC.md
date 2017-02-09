@@ -39,7 +39,7 @@ Ahora, como nosotros no estamos usando [FXML](5-programar-javafx.html), y nuestr
 
 Por que mencionamos al patrón **MVC** entonces? Para que lo tengas presente, y en tu próxima aplicación con JavaFX uses **FXML** y **MVC**. Eso ya sería de muy buen nivel!  
 
-**Te podes guardar este tutorial para después:** [Tuto](http://code.makery.ch/library/javafx-8-tutorial/es/part1/)  
+**Te podes guardar este tutorial para después:** [http://code.makery.ch/library/javafx-8-tutorial/es/part1/](http://code.makery.ch/library/javafx-8-tutorial/es/part1/)  
 *(link de la primer página de Google bajo la búsqueda de “javafx fxml mvc tutorial”)*
 
 ## Ordenemos nuestro código!
