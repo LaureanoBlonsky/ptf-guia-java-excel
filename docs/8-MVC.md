@@ -3,11 +3,9 @@ En la programación tenemos siempre muchísima libertad para escribir las cosas 
 Por ejemplo, hay infinitas formas de escribir la misma aplicación que estamos haciendo nosotros en esta Guía.  
 Un simple ejemplo podrían ser los nombres de las variables. Yo podría declarar la variable *cajonDeTexto* de varias formas:  
 ```java
-public void asd(){
 TextField cajonDeTexto = new TextField();
 TextField CAJONDETEXTo = new TextField();
 TextField cAjONdETeXto = new TextField();
-}
 ```  
 ## Convenciones  
 Cualquiera de las formas escritas arriba funcionan perfectamente (y no son las únicas). Pero imaginemos un programa escrito con distintas combinaciones de esas para las variables.  
