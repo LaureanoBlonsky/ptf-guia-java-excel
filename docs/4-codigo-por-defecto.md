@@ -112,4 +112,4 @@ Declaración del método main. Es el primer método que se ejecuta al iniciar la
 		launch(args);
 	}
 ```
-Se ejecuta el método “launch”. Éste método dispara toda una serie de tareas internas de Java para preparar toda la aplicaicón, que terminan llamando y ejecutando al método “start” de la linea 10, en el cual nosotros comenzamos a armar la aplicación con el código dentro de ese método.
+Se ejecuta el método “launch”. Éste método dispara toda una serie de tareas internas de Java para preparar toda la aplicaicón, que terminan llamando y ejecutando al método “start” de la linea 10, en el cual nosotros comenzamos a armar la aplicación con el código dentro de ese método. 
