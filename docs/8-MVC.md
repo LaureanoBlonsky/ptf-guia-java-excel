@@ -115,7 +115,7 @@ public class Main extends Application {
 
 ### El Plan!  
 #### Actualmente  
-Tenemos una clase *Main* con:  
+Tenemos una clase **Main** con:  
 1. El Try/Catch.  
 2. La creación del panel **HBox** *root*.  
 3. La creación de los componentes en pantalla: *texto*, *cajonDeTexto* y *boton*.  
@@ -131,7 +131,7 @@ Vamos a crear una clase **PanelSeleccionArchivo** con:
 3. Las propiedades del panel *root*: **alignment** y **spacing**.  
 4. El **Handler** del *boton*.  
 
-La clase *Main* ahora contendría:
+La clase **Main** ahora contendría:
 1. El Try/Catch.  
 2. La creación del panel **PanelSeleccionArchivo**.  
 3. La creación de la **Scene** *scene*.  
@@ -141,17 +141,17 @@ La clase *Main* ahora contendría:
 Que beneficios nos da esta propuesta?  
 1. No está todo en un solo archivo.  
 2. Todo lo relacionado a la pantalla está en **PanelSeleccionArchivo**.  
-3. Si queremos agregar otra pantalla, no seguimos llenando la clase *Main*, sino que creamos otra clase, como **PanelSeleccionArchivo**, y tendríamos ese código nuevo en un archivo independiente al resto de la aplicación.  
+3. Si queremos agregar otra pantalla, no seguimos llenando la clase **Main**, sino que creamos otra clase, como **PanelSeleccionArchivo**, y tendríamos ese código nuevo en un archivo independiente al resto de la aplicación.  
 4. En caso de tener una aplicación grande con 15 pantallas, no tendríamos un archivo único monstruoso, sino todo ordenado en 15 archivos independientes fáciles de leer y mantener.  
 
 ### Ahora a hacerlo!  
-Hay gente que arranca haciendo las clases como **PanelSeleccionArchivo**. Hay gente que arranca modificando la clase *Main*. Cada uno tiene su forma.  
+Hay gente que arranca haciendo las clases como **PanelSeleccionArchivo**. Hay gente que arranca modificando la clase **Main**. Cada uno tiene su forma.  
 
-A mi me gusta modificar la clase *Main* a como creo que debería quedar, y en base a eso, crear las clases necesarias. Obviamente, si después me doy cuenta de otra cosa, puedo volver y modificar *Main*.  
+A mi me gusta modificar la clase **Main** a como creo que debería quedar, y en base a eso, crear las clases necesarias. Obviamente, si después me doy cuenta de otra cosa, puedo volver y modificar **Main**.  
 Básicamente, es un proceso iterativo, en donde vamos probando y acomodando todo.  
 Yo ya hice eso por ustedes, así que acá va!  
 #### Main  
-La clase *Main* nos queda así:  
+La clase **Main** nos queda así:  
 ```java
 package application;
 
@@ -185,7 +185,7 @@ public class Main extends Application {
 ```  
 **Atención!**: Todavía no tenemos creada nuestra clase **PanelSeleccionArchivo**, por lo que seguramente el **Eclipse** nos informe que nuestra clase tiene errores. No importa, guardamos el archivo y continuamos con la otra clase!  
 #### PanelSeleccionArchivo  
-La clase *Main* nos queda así:  
+La clase **PanelSeleccionArchivo** nos queda así:  
 ```java
 package application;
 
