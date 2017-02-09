@@ -5,7 +5,7 @@ Un simple ejemplo podrían ser los nombres de las variables. Yo podría declarar
 ```java  
 TextField cajonDeTexto = new TextField();  
 TextField CAJONDETEXTo = new TextField();  
-TextField cAjOndEtEXto = new TextField();  
+TextField cAjOndEtEXto = new TextField();
 ```  
 ## Convenciones  
 Cualquiera de las formas escritas arriba funcionan perfectamente (y no son las únicas). Pero imaginemos un programa escrito con distintas combinaciones de esas para las variables.  
