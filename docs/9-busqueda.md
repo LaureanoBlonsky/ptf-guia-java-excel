@@ -263,9 +263,9 @@ Para acceder a la primer hoja dentro del Excel, creamos el objeto *hoja* del tip
 Con el código anterior que escribimos en el método buscar, vamos a ver que el Eclipse nos marca con error las dos primeras lineas.  
 Si ponemos el mouse sobre los dos errores, vemos la sugerencia que Eclipse nos da acerca del error:  
 Primera:  
-![exep1](images/excep1.png)  
+![exep1](images/exep1.png)  
 Segunda:  
-![exep2](images/excep2.png)  
+![exep2](images/exep2.png)  
 
 Ambas dicen "Unhandled exception type..." ("Excepción no manejada del tipo..." en ingles).  
 
