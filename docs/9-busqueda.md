@@ -587,7 +587,7 @@ Recordemos que es necesario usar el **Try/Catch** como vimos ya en el paso [ante
 
 #### Excel de prueba  
 
-Para esta prueba simple, podemos descargar el Excel que yo usé descargándolo de [acá](excel/ArchivoExcel.xlsx).  
+Para esta prueba simple, podemos descargar el Excel que yo usé descargándolo de [acá](excels/ArchivoExcel.xlsx).  
 
 #### Corremos el programa  
 
