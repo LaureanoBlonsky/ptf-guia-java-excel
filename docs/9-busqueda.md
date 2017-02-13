@@ -230,7 +230,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelHelper {
 
-	public static void buscar(String rutaArchivo, String textoBuscar) throws IOException{
+	public static void buscar(String rutaArchivo, String textoBuscar){
 
 	}
 	
@@ -242,7 +242,7 @@ public class ExcelHelper {
 
 Llenamos el método *buscar* con el código necesario para abrir la planilla:  
 ```java
-	public static void buscar(String rutaArchivo, String textoBuscar) throws IOException{
+	public static void buscar(String rutaArchivo, String textoBuscar){
 
 		FileInputStream archivo = new FileInputStream(new File(rutaArchivo));
 		
@@ -257,6 +257,84 @@ En la primer linea dentro del método abrimos el archivo, basándonos en la ruta
 Después, para leer ese archivo como un Excel, creamos el objeto *planilla* del tipo **XSSFWorkbook** (Workbook en ingles es libro/cuaderno de trabajo) pasándole al constructor el *archivo*.  
 
 Para acceder a la primer hoja dentro del Excel, creamos el objeto *hoja* del tipo **XSSFSheet** (Sheet en ingles es Hoja) usando el método *getSheetAt* de la *planilla*, que recibe el número de la hoja que debe entregar. En nuestro caso, 0 (cero), refiere a la primera.  
+
+##### Exceptions  
+
+Con el código anterior que escribimos en el método buscar, vamos a ver que el Eclipse nos marca con error las dos primeras lineas.  
+Si ponemos el mouse sobre los dos errores, vemos la sugerencia que Eclipse nos da acerca del error:  
+Primera:  
+![exep1](images/excep1.png)  
+Segunda:  
+![exep2](images/excep2.png)  
+
+Ambas dicen "Unhandled exception type..." ("Excepción no manejada del tipo..." en ingles).  
+
+En Java, los errores se llaman *Exceptions*. Y Java tiene una característica muy importante que se llama "Manejo de Exceptions".  
+Los lenguajes que no tienen esa característica, cuando ocurre un error, la aplicación se paraliza o se cierra. Eso arruina todo lo que la aplicación o el usuario estaban haciendo.  
+
+Seguramente te ha pasado en algún momento estar trabajando en algún documento, escribiendo algún texto, informe, jugando a un juego, etc., y de pronto por un error se cierra la aplicación, programa o juego, y perdiste todo lo que habías hecho. Eso pasa porque la aplicación, programa o juego no tiene manejo de Excepciones, o tiene un manejo pobre.  
+
+Este "manejo de excepciones" funciona de la siguiente forma: hay cosas que los diseñadores del lenguaje y librerías mas importantes saben que pueden fallar. Por ejemplo: no es posible dividir por 0 (cero). Entonces, imaginemos que una persona crea el siguiente método:   
+```java
+	public static void dividir(int primerNumero, int segundoNumero){
+		int resultado = primerNumero / segundoNumero;
+		//hacer algo con el resultado...
+	}
+```  
+El método anterior va a funcionar perfecto siempre que *segundoNumero* no sea 0. Si alguna parte de la aplicación llama a ese método pasando como parámetro de *segundoNumero* el valor 0, entonces se va a generar el siguiente error:  
+
+```java  
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+```  
+Entonces podemos hacer dos cosas:  
+1. Le indicamos al método que escribimos que debe hacer en el caso de que suceda esa **Exception**.  
+2. Indicamos en el método que puede ocurrir esa **Exception**, de modo que las partes de la aplicación que lo usen, decidan que hacer en caso de que suceda.  
+
+La primer solución es la que ya habíamos usado [antes](4-codigo-por-defecto.html#try--catch): el **Try/Catch**:  
+```java
+	public static void dividir(int primerNumero, int segundoNumero){
+	
+		try{
+			int resultado = primerNumero / segundoNumero;
+			//hacer algo con el resultado...
+		} catch(ArithmeticException e){
+			//si se ejecuta el código que se pone acá, es porque la operación anterior falló.  
+			//acá podemos informar el error al usuario y guardar todo lo que haya hecho para que no se pierda,  
+			//o pedirle que ingrese un nuevo valor para segundoNumero.  
+		}
+		
+	}
+```  
+
+La segunda solución es la que vamos a usar en este caso:  
+```java
+	public static void dividir(int primerNumero, int segundoNumero) throws Exception{
+		int resultado = primerNumero / segundoNumero;
+		//hacer algo con el resultado...
+	}
+```  
+Entonces, con esta forma, si otra parte de la aplicación quiere llamar al método sin usar **Try/Catch**, va a pasar lo siguiente:  
+
+![exep3](images/excep3.png)  
+El Eclipse, o IDE que se esté usando, va a avisar que es necesario usar un **Try/Catch** por si sucede un error, para "manejar" el error y hacer lo que sea necesario para continuar sin mayor problema.  
+Si no hacemos eso, si llega a haber un cero en la variable segundoNumero, el programa va a fallar y cerrarse, perdiéndose todo lo que no se haya guardado.  
+
+##### Nuestro caso  
+En nuestro caso, los que escribieron el código de **FileInputStream** y **XSSFWorkbook** saben que puede haber un error si la *rutaArchivo* que se pasa es incorrecta. Imaginemos que en vez de pasar la ruta real del archivo pasamos un texto cualquiera. Va a fallar!  
+
+Por eso, nos obligan a manejar la *IOException* (Exception de Entrada/Salida), que es una Excepción que se da cuando hay un error leyendo o escribiendo archivos.  
+Modificamos el método *buscar* agregándole el "throws" de la Exception, para que el que decida que hacer en caso de error no sea **ExcelHelper**, sino la parte de la aplicación que la use:  
+```java  
+	public static void buscar(String rutaArchivo, String textoBuscar) throws IOException{
+
+		FileInputStream archivo = new FileInputStream(new File(rutaArchivo));
+
+		XSSFWorkbook planilla = new XSSFWorkbook (archivo);
+
+		XSSFSheet hoja = planilla.getSheetAt(0);
+	
+	}
+```  
 
 #### Recorrer todas las celdas  
 
@@ -384,7 +462,6 @@ Si ya detectamos que la Celda contiene el texto *textoBuscar* que estamos buscan
 			}
 		}
 	}
-
 ```  
 Con el método **getRowIndex** de *celda* obtenemos el número de fila de la celda, y lo guardamos en *filaEncontrada*. Nótese que le sumamos 1 a ese valor. Esto lo hacemos porque para Java, la primer fila no es la fila 1, sino la fila 0. Si tenes dudas sobre esto, consultalo con tu mentor!  
 
@@ -411,7 +488,39 @@ Para que sirve esto? Imaginemos que nuestra aplicación muestra un listado de us
 
 Eso al usuario le da un mensaje claro y suficiente. Pero si la aplicación la estamos usando o probando nosotros... no nos dice nada sobre lo que pasó realmente! Nosotros vamos a querer mas detalle, con toda la información sobre el error en particular.  
 
-Ese detalle lo podemos volcar en la consola, y cuando veamos que algo no funciona bien, chequearla para verlo. Imagínense si al usuario le mostramos el error que habíamos citado previamente [Descargamos Apache POI](#descargamos-apache-poi)
+Ese detalle lo podemos volcar en la consola, y cuando veamos que algo no funciona bien, chequearla para verlo. Imaginate si al usuario le mostramos el error que habíamos citado previamente [Descargamos Apache POI](#descargamos-apache-poi). No entendería nada!  
+
+Como escribimos en la consola? Así:     
+
+```java  
+	for (Row fila : hoja) {
+		for (Cell celda : fila) {
+			if (celda.getCellTypeEnum() == CellType.STRING) {			
+				if (celda.getStringCellValue().contains(textoBuscar)) {				
+					int filaEncontrada = celda.getRowIndex() + 1;					
+					int columnaEncontrada = celda.getColumnIndex();
+					String columnaEncontradaLetra = CellReference.convertNumToColString(columnaEncontrada);		
+					
+					String mensaje = "Se encontró el texto '"+textoBuscar+"' en: "+columnaEncontradaLetra+filaEncontrada;
+
+					System.out.println(mensaje);					
+				}				
+			}
+		}
+	}
+
+```  
+Primero creamos el texto que queremos mostrar y lo guardamos en la variable *mensaje*.  
+
+Luego llamamos al método **println** de *System.out* y le pasamos el *mensaje* como argumento.  
+
+
+
+#### Código del ExcelHelper  
+
+Luego del **for** principal, cerramos la planilla y archivo, ya que no lo usaremos mas.  
+
+Entonces nuestra clase **ExcelHelper** queda de la siguiente forma:
 
 ```java  
 package application;
@@ -427,36 +536,197 @@ import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+public class ExcelHelper {
 
+	public static void buscar(String rutaArchivo, String textoBuscar) throws IOException{
+	
+		FileInputStream archivo = new FileInputStream(new File(rutaArchivo));
+		XSSFWorkbook planilla = new XSSFWorkbook (archivo);
+		XSSFSheet hoja = planilla.getSheetAt(0);
+
+		for (Row fila : hoja) {
+			for (Cell celda : fila) {
+	            		if (celda.getCellTypeEnum() == CellType.STRING) {
+	                		if (celda.getStringCellValue().contains(textoBuscar)) {
+	                			int filaEncontrada = celda.getRowIndex()+1;
+	                			int columnaEncontrada = celda.getColumnIndex();
+	                			String columnaEncontradaLetra = CellReference.convertNumToColString(columnaEncontrada);
+	                    			String mensaje = "Se encontró el texto '"+textoBuscar+"' en: "+columnaEncontradaLetra+filaEncontrada;
+
+	                    			System.out.println(mensaje);
+	                		}
+	            		}
+	        	}
+	    	}
+
+		planilla.close();
+		archivo.close();
+		
+	}
+
+}
+```  
+
+### Llamada al **ExcelHelper** desde **PanelSeleccionArchivo**  
+
+Ahora que ya tenemos listo el **ExcelHelper**, solo queda llamarlo desde la clase **PanelSeleccionArchivo**:  
+```java  
+
+	private void buscar(){
+		try {
+			ExcelHelper.buscar(cajonDeTexto.getText(), cajonDeTextoABuscar.getText());
+		} catch (IOException e) {
+			System.out.println("Hubo un error!");
+			e.printStackTrace();
+		}
+	}
+```  
+Recordemos que es necesario usar el **Try/Catch** como vimos ya en el paso [anterior](#exceptions).  
+
+### Probamos el código  
+
+#### Excel de prueba  
+
+Para esta prueba simple, podemos descargar el Excel que yo usé descargándolo de [acá](excel/ArchivoExcel.xlsx).  
+
+#### Corremos el programa  
+
+Corremos el programa, seleccionamos el archivo y buscamos algunos de los nombres.  
+
+Para ver si el resultado que escribimos en la consola sale correctamente, vamos al Eclipse y en la parte inferior abrimos la pestaña **Console**.  
+
+Ahí deberíamos ver el resultado:  
+![Im](images/console.png)  
+
+### Código completo  
+
+#### ExcelHelper  
+
+```java  
+package application;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.CellReference;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelHelper {
 
 	public static void buscar(String rutaArchivo, String textoBuscar) throws IOException{
-		//Obtenemos el archivo
+	
 		FileInputStream archivo = new FileInputStream(new File(rutaArchivo));
-		//Generamos una instancia de la planilla
 		XSSFWorkbook planilla = new XSSFWorkbook (archivo);
-		//Obtenemos la primer hoja de la planilla
 		XSSFSheet hoja = planilla.getSheetAt(0);
 
 		for (Row fila : hoja) {
-	        for (Cell celda : fila) {
-	            if (celda.getCellTypeEnum() == CellType.STRING) {
-	                if (celda.getStringCellValue().contains(textoBuscar)) {
-	                	int filaEncontrada = celda.getRowIndex()+1;
-	                	int columnaEncontrada = celda.getColumnIndex();
-	                	String columnaEncontradaLetra = CellReference.convertNumToColString(columnaEncontrada);
-	                    String mensaje = "Se encontró el texto '"+textoBuscar+"' en: "+columnaEncontradaLetra+filaEncontrada;
+			for (Cell celda : fila) {
+	            		if (celda.getCellTypeEnum() == CellType.STRING) {
+	                		if (celda.getStringCellValue().contains(textoBuscar)) {
+	                			int filaEncontrada = celda.getRowIndex()+1;
+	                			int columnaEncontrada = celda.getColumnIndex();
+	                			String columnaEncontradaLetra = CellReference.convertNumToColString(columnaEncontrada);
+	                    			String mensaje = "Se encontró el texto '"+textoBuscar+"' en: "+columnaEncontradaLetra+filaEncontrada;
 
-	                    System.out.println(mensaje);
-	                }
-	            }
-	        }
-	    }
+	                    			System.out.println(mensaje);
+	                		}
+	            		}
+	        	}
+	    	}
 
-	planilla.close();
-        archivo.close();
+		planilla.close();
+		archivo.close();
+		
+	}
 
+}
+```  
+#### PanelSeleccionArchivo  
+
+```java  
+package application;
+
+import java.io.File;
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+public class PanelSeleccionArchivo extends HBox{
+
+	Label texto;
+	TextField cajonDeTexto;
+	Button boton;
+	Stage primaryStage;
+	TextField cajonDeTextoABuscar;
+	Button botonBuscar;
+	public PanelSeleccionArchivo(Stage primaryStage) {
+		this.primaryStage=primaryStage;
+		inicializarComponentes();
+		aplicarPropiedades();
+		crearHandlers();
+	}
+
+	private void aplicarPropiedades() {
+		setAlignment(Pos.CENTER);
+		setSpacing(3);
+	}
+
+	private void inicializarComponentes() {
+		texto = new Label("Excel");
+		getChildren().add(texto);
+
+		cajonDeTexto = new TextField();
+		getChildren().add(cajonDeTexto);
+
+		boton = new Button("Examinar");
+		getChildren().add(boton);
+
+		cajonDeTextoABuscar = new TextField();
+		getChildren().add(cajonDeTextoABuscar);
+
+		botonBuscar = new Button("Buscar");
+		getChildren().add(botonBuscar);
+	}
+
+	private void crearHandlers() {
+		boton.setOnAction(new EventHandler<ActionEvent>() {
+		    @Override public void handle(ActionEvent e) {
+		    	FileChooser selectorDeArchivo = new FileChooser();
+				selectorDeArchivo.setTitle("Abri el archivo Excel");
+
+				File archivoSeleccionado = selectorDeArchivo.showOpenDialog(primaryStage);
+
+				if (archivoSeleccionado != null) {
+					String ruta = archivoSeleccionado.getAbsolutePath();
+					cajonDeTexto.setText(ruta);
+				}
+		    }
+		});
+
+		botonBuscar.setOnAction(e -> buscar());
+
+	}
+
+	private void buscar(){
+		try {
+			ExcelHelper.buscar(cajonDeTexto.getText(), cajonDeTextoABuscar.getText());
+		} catch (IOException e) {
+			System.out.println("Hubo un error!");
+			e.printStackTrace();
+		}
 	}
 
 }
