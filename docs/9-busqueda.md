@@ -315,7 +315,7 @@ La segunda solución es la que vamos a usar en este caso:
 ```  
 Entonces, con esta forma, si otra parte de la aplicación quiere llamar al método sin usar **Try/Catch**, va a pasar lo siguiente:  
 
-![exep3](images/excep3.png)  
+![exep3](images/exep3.png)  
 El Eclipse, o IDE que se esté usando, va a avisar que es necesario usar un **Try/Catch** por si sucede un error, para "manejar" el error y hacer lo que sea necesario para continuar sin mayor problema.  
 Si no hacemos eso, si llega a haber un cero en la variable segundoNumero, el programa va a fallar y cerrarse, perdiéndose todo lo que no se haya guardado.  
 
