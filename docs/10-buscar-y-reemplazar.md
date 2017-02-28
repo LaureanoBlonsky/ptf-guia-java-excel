@@ -476,7 +476,9 @@ Con un **for** recorrerá todos los archivos que están en la tabla.
 Por cada uno, va a llamar al método **reemplazar** del **ExcelHelper** que crearemos a continuación.  
 Tal método recibirá la ruta del archivo, el texto a buscar y el texto con el cual reemplazar, hará el reemplazo y devolverá un entero con la cantidad de reemplazos efectuados, que lo guardaremos en la variable *cambios*.  
 Después, modificaremos al archivo seteando la cantidad de cambios hechos en su variable *reemplazos*.  
-Si algún error ocurre, en su variable *reemplazos* se escribirá el mensaje "Error!" y se indicará el detalle del problema en la consola.  
+
+Si algún error ocurre, en su variable *reemplazos* se escribirá el mensaje "Error!" y se indicará el detalle del problema en la consola. Por ejemplo, si tienen abierto el archivo Excel en el programa MicrosoftExcel, no les va a dejar realizar el reemplazo, y van a poder obtener el Error en la Interfaz y el detalle en la consola. Probalo!!  
+
 #### ExcelHelper.reemplazar  
 
 En nuestra clase ExcelHelper agregamos el siguiente método:  
