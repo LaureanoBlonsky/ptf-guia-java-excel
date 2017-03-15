@@ -4,7 +4,8 @@ Recordemos lo que nos propusimos:
 1. Crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora. **(HECHO!)**  
 2. Vamos a buscar alguna palabra o número dentro del Excel e informar su ubicación. **(HECHO!)**  
 3. **Vamos a reemplazar una palabra por otra dentro de uno o mas Excels.**  
-4. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.  
+4. Agregar Pestañas a la aplicación, para que las distintas partes coexistan.  
+5. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.  
 
 Ahora vamos por el punto 3!  
 
