@@ -13,7 +13,8 @@ Vamos a construir juntos un programa de escritorio, con el lenguaje Java, que no
 1. Vamos a crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora.  
 2. Vamos a buscar alguna palabra o número dentro del Excel e informar su ubicación.  
 3. Vamos a reemplazar una palabra por otra dentro de uno o mas Excels.  
-4. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.  
+4. Agregar Pestañas a la aplicación, para que las distintas partes coexistan.  
+5. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.  
 
 Empecemos!
 
