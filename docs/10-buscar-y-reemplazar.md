@@ -96,7 +96,7 @@ public class Main extends Application {
 }
 ```  
 
-Al final de este tutorial crearemos una pantalla con pestañas, para que todas las pantallas que creamos puedan coexistir en la misma aplicación!  
+En la próxima parte de este tutorial crearemos una pantalla con pestañas, para que todas las pantallas que creamos puedan coexistir en la misma aplicación!  
 
 ## Una clase que nos ayudará con los Excels  
 
