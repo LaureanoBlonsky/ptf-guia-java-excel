@@ -1,4 +1,5 @@
 # Aplicación de Escritorio para manejo de plantillas Excel con Java  
+Autor: Laureano Blonsky, Mentor de Programá tu Futuro, Sede Usuaria  
 
 # Bienvenido a la Guía de Java y Excel!
 
