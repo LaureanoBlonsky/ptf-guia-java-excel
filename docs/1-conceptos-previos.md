@@ -57,3 +57,6 @@
 
 **Mas sobre librerías: https://www.programarya.com/Cursos/Java/Librerias**  
 *(link de la primer página de Google bajo la búsqueda de “que es una libreria en java”)*
+
+# Indice  
+[<- Atrás](docs/2-entorno-de-trabajo.md) (Instalación del Entorno de trabajo)  ||  (Instalación del Entorno de trabajo)[Siguiente ->](docs/2-entorno-de-trabajo.md)  
