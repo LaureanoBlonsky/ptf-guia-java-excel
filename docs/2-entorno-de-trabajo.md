@@ -42,4 +42,7 @@ http://efxclipse.bestsolution.at/install.html
 
 **Como instalar eclipse: http://es.wikihow.com/descargar,-instalar-y-ejecutar-JDK-y-Eclipse**  
 *(link de la primer página de Google bajo la búsqueda de “como ejecutar eclipse”)*  
-(Ojo, en el paso 4 del “Como instalar eclipse” tienen que ir al link que yo les compartí antes, no al que figura ahí: http://efxclipse.bestsolution.at/install.html)
+(Ojo, en el paso 4 del “Como instalar eclipse” tienen que ir al link que yo les compartí antes, no al que figura ahí: http://efxclipse.bestsolution.at/install.html)  
+
+# [Indice](../README.md#indice)  
+[<- Atrás](1-conceptos-previos.md) (Conceptos previos)  ||  (Creación del primer programa)[Siguiente ->](3-creacion-programa.md)  
