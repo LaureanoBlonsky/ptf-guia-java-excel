@@ -48,6 +48,8 @@ Empecemos!
  2. [Abrir el Excel](docs/9-busqueda.md#abrir-el-excel)  
  3. [ExcelHelper con ApachePOI](docs/9-busqueda.md#excelhelper)  
 10. [Búsqueda y reemplazo dentro de uno o mas Excels](docs/10-buscar-y-reemplazar.md)  
+11. [Unificando la interfaz con Pestañas](docs/11-pestanas.md)  
+12. [Un proceso Personalizado!](docs/12-proceso-personalizado.md)    
 
  
  
