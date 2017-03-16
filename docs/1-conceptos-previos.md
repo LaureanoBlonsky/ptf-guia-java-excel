@@ -1,4 +1,5 @@
-# Conceptos previos!  
+(0. Introducción) [<- Atrás](../README.md) || [Siguiente ->](2-entorno-de-trabajo.md) (2. Instalación del Entorno de trabajo)  
+# 1. Conceptos previos!  
 ## ¿Que es Java?
  
  Java es un lenguaje de programación con el que podemos realizar muchos tipos de programas. En la actualidad es un lenguaje muy extendido y cada vez cobra más importancia tanto en el ámbito de Internet como en la informática en general. 
@@ -59,4 +60,4 @@
 *(link de la primer página de Google bajo la búsqueda de “que es una libreria en java”)*
 
 # [Indice](../README.md#indice)  
-[<- Atrás](../README.md) (Introducción)  ||  (Instalación del Entorno de trabajo)[Siguiente ->](2-entorno-de-trabajo.md)  
+(0. Introducción) [<- Atrás](../README.md) || [Siguiente ->](2-entorno-de-trabajo.md) (2. Instalación del Entorno de trabajo)  
