@@ -161,3 +161,111 @@ public class PanelProcesoPersonalizado extends GridPane{
 ```  
 
 ## Creamos el método del proceso en el **ExcelHelper**  
+
+En **ExcelHelper** agregamos el método que va a usar nuestro nuevo módulo:  
+
+```java  
+	public static void procesoPersonalizado(String rutaArchivo, String colInicio, String colFin, int filaInicio, int filaFin) throws IOException{
+
+		FileInputStream archivo = new FileInputStream(new File(rutaArchivo));
+
+		XSSFWorkbook planilla = new XSSFWorkbook (archivo);
+
+		XSSFSheet hoja = planilla.getSheetAt(0);
+
+		List<Cuenta> cuentas = new ArrayList<Cuenta>();
+		List<String> meses = new ArrayList<String>();
+
+		int colInicioIndice = CellReference.convertColStringToIndex(colInicio);
+		int colFinIndice = CellReference.convertColStringToIndex(colFin);
+
+		int colInicioIndiceAux = colInicioIndice+1;;
+
+		Row fila;
+
+		//obtener meses del encabezado
+		fila = hoja.getRow(filaInicio);
+		while(colInicioIndiceAux<=colFinIndice){
+			String mes = fila.getCell(colInicioIndiceAux).getStringCellValue();
+			meses.add(mes);
+			colInicioIndiceAux++;
+		}
+
+		//obtener cuentas y valores
+		filaInicio++;
+		while(filaInicio<=filaFin){
+			fila = hoja.getRow(filaInicio);
+			String nombreCuenta = fila.getCell(colInicioIndice).getStringCellValue();
+
+			Cuenta cuenta = new Cuenta(nombreCuenta);
+			cuentas.add(cuenta);
+
+			//obtener valores para la cuenta
+			colInicioIndiceAux = colInicioIndice+1;
+			while(colInicioIndiceAux<=colFinIndice){
+				cuenta.getValores().add(fila.getCell(colInicioIndiceAux).getNumericCellValue());
+				colInicioIndiceAux++;
+			}
+
+			filaInicio++;
+		}
+
+		//escribir nueva hoja con el nuevo formato
+		XSSFSheet hojaDestino = planilla.createSheet("Generado");
+
+		//escribir el encabezado
+		hojaDestino.createRow(0).createCell(0).setCellValue("Cuenta");
+		hojaDestino.getRow(0).createCell(1).setCellValue("Mes");
+		hojaDestino.getRow(0).createCell(2).setCellValue("Valor");
+
+		//escribir cada fila con nombre de la Cuenta, mes y valor
+		int filaContador=1;
+
+		for(String mes: meses){
+			for(Cuenta cuenta: cuentas){
+				fila = hojaDestino.createRow(filaContador);
+				fila.createCell(0).setCellValue(cuenta.getNombre());
+				fila.createCell(1).setCellValue(mes);
+				fila.createCell(2).setCellValue(cuenta.getValores().get(meses.indexOf(mes)));
+				filaContador++;
+			}
+		}
+
+		archivo.close();
+		FileOutputStream archivoSalida = new FileOutputStream(rutaArchivo);
+		planilla.write(archivoSalida);
+		planilla.close();
+
+	}
+```  
+
+## Agregado del nuevo módulo  
+
+No olvidemos que ahora tenemos que agregar este nuevo módulo al **PanelPestanias**:  
+```java  
+	PanelProcesoPersonalizado panelProcesoPersonalizado;
+	
+	private void inicializarPaneles() {
+		panelSeleccionArchivo = new PanelSeleccionArchivo(primaryStage);
+		agregarPestania(panelSeleccionArchivo, "Seleccionar archivo");
+
+		panelBusqueda = new PanelBusqueda(primaryStage);
+		agregarPestania(panelBusqueda, "Busqueda");
+
+		panelBuscarYReemplazar = new PanelBuscarYReemplazar(primaryStage);
+		agregarPestania(panelBuscarYReemplazar, "Buscar y Reemplazar");
+
+		panelProcesoPersonalizado = new PanelProcesoPersonalizado(primaryStage);
+		agregarPestania(panelProcesoPersonalizado, "Proceso personalizado");
+	}
+```  
+
+## Conclusión  
+
+Vieron como, ya teniendo un panel como **PanelPestanias**, y ya teniendo una clase como **ExcelHelper**, agregar nuevos módulos o características a nuestra aplicación es muy fácil y ordenado.  
+
+Solo tenemos que agregar el panel nuevo, agregar una función, si es necesaria, al **ExcelHelper**, y agregar el panel al **PanelPestanias**.  
+
+Se acuerdan cuando vimos [Buenas prácticas](8-MVC.md#buenas-practicas)? Habíamos hablado de tener el código ordenado en distintas clases. Imagínense como sería nuestra aplicación si hiciese lo mismo que hace ahora, pero todo metido en la clase **Main**!  
+
+Por eso, siempre es fundamental tener el código ordenado y separado en distintas clases, según patrones como [MVC](docs/8-MVC.md#mvc), así nosotros mismos y otros pueden entender lo que escribimos y construir fácilmente sobre eso.  
