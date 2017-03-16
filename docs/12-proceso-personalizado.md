@@ -268,4 +268,4 @@ Solo tenemos que agregar el panel nuevo, agregar una función, si es necesaria, 
 
 Se acuerdan cuando vimos [Buenas prácticas](8-MVC.md#buenas-practicas)? Habíamos hablado de tener el código ordenado en distintas clases. Imagínense como sería nuestra aplicación si hiciese lo mismo que hace ahora, pero todo metido en la clase **Main**!  
 
-Por eso, siempre es fundamental tener el código ordenado y separado en distintas clases, según patrones como [MVC](docs/8-MVC.md#mvc), así nosotros mismos y otros pueden entender lo que escribimos y construir fácilmente sobre eso.  
+Por eso, siempre es fundamental tener el código ordenado y separado en distintas clases, según patrones como [MVC](8-MVC.md#mvc), así nosotros mismos y otros pueden entender lo que escribimos y construir fácilmente sobre eso.  
