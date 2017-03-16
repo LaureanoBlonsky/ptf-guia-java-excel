@@ -1,4 +1,6 @@
-# Creación del esqueleto del programa!  
+(2. Instalación del Entorno de trabajo) [<- Atrás](2-entorno-de-trabajo.md) || [Siguiente ->](4-codigo-por-defecto.md) (4. Código base del programa)  
+
+# 3. Creación del esqueleto del programa!  
 ## Abrimos el Eclipse  
 
 Para arrancar, vamos a la carpeta en donde descomprimimos el Eclipse y le damos doble click al ejecutable “eclipse”:  
@@ -37,4 +39,7 @@ Para arrancar, vamos a la carpeta en donde descomprimimos el Eclipse y le damos 
  Para ejecutar la aplicación, le damos click derecho del raton al archivo **Main.java** y vamos a **Run As / Java Application**. Esperamos unos segundos (en este momento el compilador está compilando y generando el ejecutable de la aplicación, a partir de nuestro proyecto) y debería abrirlos nuestro programa todavía vacío:  
 
 
-![Imagen proyectoVacio](https://laureanoblonsky.github.io/ptf-guia-java-excel/docs/images/appvacia.png)
+![Imagen proyectoVacio](https://laureanoblonsky.github.io/ptf-guia-java-excel/docs/images/appvacia.png)  
+
+# [Indice](../README.md#indice)  
+(2. Instalación del Entorno de trabajo) [<- Atrás](2-entorno-de-trabajo.md) || [Siguiente ->](4-codigo-por-defecto.md) (4. Código base del programa)    
