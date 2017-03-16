@@ -1,4 +1,4 @@
-# Aplicación de Escritorio para manejo de plantillas Excel con Java  
+# Aplicación de Escritorio para manejo de planillas Excel con Java  
 Autor: Laureano Blonsky, Mentor de Programá tu Futuro, Sede Usuaria  
 
 # Bienvenido a la Guía de Java y Excel!
@@ -7,21 +7,41 @@ Haremos una aplicación de escritorio Java para Windows, Linux o Mac con manejo 
 
 Vamos a construir juntos un programa de escritorio, con el lenguaje Java, que nos permita Leer, Crear y Modificar archivos Excel.
 
- Nos meteremos con los siguientes conceptos:
+## Conceptos previos (te avisaremos cuando necesites aprenderlos)  
+En esta guía no explicamos:  
+1. En profundidad los fundamentos de la Programación Orientada a Objetos (POO)  
+2. La sintaxis del lenguaje Java.  
+3. Nociones básicas como: que es un lenguaje, que es un compilador, que es una aplicación.  
+
+Pero la guía arranca como para el que no sabe nada, e igualmente dedicaremos unos segundos a estos conceptos citados.  
+Lo que sí, te pediremos que los profundices y aprendas bien con tu mentor o uses los links que te sugerimos acá!  
+
+## Que temas veremos?  
+
+Los siguiente:  
 - Java como lenguaje Orientado a Objetos.  
 - Construcción de una interfaz de usuario con JavaFX.  
 - Utilización de Librerías de terceros para agregar funcionalidades a nuestra aplicación: en nuestro caso, el manejo de planillas Excel.  
+## Que desarrollaremos?  
 
- Desarrollaremos en el siguiente orden:
+En el siguiente orden:  
 1. Vamos a crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora.  
 2. Vamos a buscar alguna palabra o número dentro del Excel e informar su ubicación.  
 3. Vamos a reemplazar una palabra por otra dentro de uno o mas Excels.  
 4. Agregar Pestañas a la aplicación, para que las distintas partes coexistan.  
 5. Vamos a seleccionar un Excel y hacerle todas unas modificaciones y adaptarlo para que otro programa lo pueda leer.  
 
+## Imágenes de la aplicación final  
+La aplicación final lucirá de la siguiente forma:  
+![a](docs/images/procesopersonalizado_prueba.png)  
+![a](docs/images/pestanias3.png)  
+![a](docs/images/pestanias2.png)  
+![a](docs/images/pestanias.png)  
+
+
 Empecemos!
 
-# Indice  
+## Indice  
 
 1. [Conceptos previos](docs/1-conceptos-previos.md)  
  1. [Que es Java](docs/1-conceptos-previos.md#que-es-java)  
