@@ -1,4 +1,5 @@
-# Instalación de nuestro entorno de trabajo
+(1. Conceptos previos) [<- Atrás](1-conceptos-previos.md) || [Siguiente ->](3-creacion-programa.md) (3. Creación del primer programa)  
+# 2. Instalación de nuestro entorno de trabajo
 ## Java JDK
 
  Como explicamos en la sección ¿Que es Java?, Java necesita de una Máquina Virtual creada para ser intermediaria entre los programas escritos en ese lenguaje y el Sistema Operativo donde corren (Windows, Linux, etc). 
@@ -45,4 +46,4 @@ http://efxclipse.bestsolution.at/install.html
 (Ojo, en el paso 4 del “Como instalar eclipse” tienen que ir al link que yo les compartí antes, no al que figura ahí: http://efxclipse.bestsolution.at/install.html)  
 
 # [Indice](../README.md#indice)  
-[<- Atrás](1-conceptos-previos.md) (Conceptos previos)  ||  (Creación del primer programa)[Siguiente ->](3-creacion-programa.md)  
+(1. Conceptos previos) [<- Atrás](1-conceptos-previos.md) || [Siguiente ->](3-creacion-programa.md) (3. Creación del primer programa)  
