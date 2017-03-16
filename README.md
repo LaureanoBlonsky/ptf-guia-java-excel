@@ -18,7 +18,8 @@ Vamos a construir juntos un programa de escritorio, con el lenguaje Java, que no
 
 Empecemos!
 
-# Indice
+# Indice  
+
 1. [Conceptos previos](docs/1-conceptos-previos.md)  
  1. [Que es Java](docs/1-conceptos-previos.md#que-es-java)  
  2. [Que es la programación orientada a objetos (POO)](docs/1-conceptos-previos.md#que-significa-que-java-sea-orientado-a-objetos)  
