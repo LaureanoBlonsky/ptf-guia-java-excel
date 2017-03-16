@@ -59,4 +59,4 @@
 *(link de la primer página de Google bajo la búsqueda de “que es una libreria en java”)*
 
 # [Indice](../README.md#indice)  
-[<- Atrás](2-entorno-de-trabajo.md) (Instalación del Entorno de trabajo)  ||  (Instalación del Entorno de trabajo)[Siguiente ->](2-entorno-de-trabajo.md)  
+[<- Atrás](../README.md) (Introducción)  ||  (Instalación del Entorno de trabajo)[Siguiente ->](2-entorno-de-trabajo.md)  
