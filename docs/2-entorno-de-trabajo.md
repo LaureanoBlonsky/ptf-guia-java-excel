@@ -11,14 +11,14 @@
  Por esto, lo que nosotros necesitamos descargar es el llamado **JDK (Java Development Kit)** (Kit de Desarrollo de Java en castellano)
 
 Buscamos la última versión desde la página oficial:
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
  Esta guía la hice en Windows de 64 bits, por lo que busqué el siguiente instalador:
 jdk-8u121-windows-x64.exe
 
  Una vez que se descargó, lo instalamos.
 
-**Mas sobre JDK y JRE: http://coudmonqui.blogspot.com.ar/2013/05/que-es-la-jvm-el-jre-y-el-jdk-y-con-que.html**  
+**Mas sobre JDK y JRE: [http://coudmonqui.blogspot.com.ar/2013/05/que-es-la-jvm-el-jre-y-el-jdk-y-con-que.html](http://coudmonqui.blogspot.com.ar/2013/05/que-es-la-jvm-el-jre-y-el-jdk-y-con-que.html)**  
 *(link de la primer página de Google bajo la búsqueda de “diferencias jre y jdk”)*
 
 ## Eclipse
@@ -32,13 +32,13 @@ jdk-8u121-windows-x64.exe
  Además, los IDEs suelen proporcionar herramientas gráficas para acelerar el diseño visual de la interfaz.
 
  En nuestro caso, vamos a instalar un combo que viene Eclipse con varias otras herramientas que sirven para generar la parte visual de la aplicación:
-http://efxclipse.bestsolution.at/install.html
+[http://efxclipse.bestsolution.at/install.html](http://efxclipse.bestsolution.at/install.html)
 
  Seleccionamos la versión de nuestro Sistema Operativo y se descarga. 
 
  Cuando termina, descomprimimos el archivo Zip y ya tenemos nuestras herramientas listas para comenzar!
 
-**Mas sobre IDEs: http://globalmentoring.com.mx/cursos-java/java-fundamentos/que-es-un-ide/**  
+**Mas sobre IDEs: [http://globalmentoring.com.mx/cursos-java/java-fundamentos/que-es-un-ide/](http://globalmentoring.com.mx/cursos-java/java-fundamentos/que-es-un-ide/)**  
 *(link de la primer página de Google bajo la búsqueda de “que es un ide”)*
 
 **Como instalar eclipse: http://es.wikihow.com/descargar,-instalar-y-ejecutar-JDK-y-Eclipse**  
