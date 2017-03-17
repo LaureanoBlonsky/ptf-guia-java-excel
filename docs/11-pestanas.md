@@ -1,4 +1,6 @@
-# Agregando Pestañas a la aplicación
+(10. Búsqueda y reemplazo dentro de uno o mas Excels) [<- Atrás](10-buscar-y-reemplazar.md) || [Siguiente ->](12-proceso-personalizado.md) (12. Un proceso Personalizado)  
+
+# 11. Agregando Pestañas a la aplicación
 
 Recordemos lo que nos propusimos:  
 1. Crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora. **(HECHO!)**  
@@ -172,3 +174,5 @@ public class PanelPestanias extends TabPane{
 }
 ```  
 
+# [Indice](../README.md#indice)  
+(10. Búsqueda y reemplazo dentro de uno o mas Excels) [<- Atrás](10-buscar-y-reemplazar.md) || [Siguiente ->](12-proceso-personalizado.md) (12. Un proceso Personalizado)  
