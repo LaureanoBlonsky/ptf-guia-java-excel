@@ -240,6 +240,45 @@ En **ExcelHelper** agregamos el método que va a usar nuestro nuevo módulo:
 
 	}
 ```  
+### Creación de clase **Cuenta**  
+Como es un proceso un poco mas complejo, creé una clase **Cuenta** para ayudarme:  
+```java  
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cuenta {
+
+	private String nombre;
+
+	private List<Double> valores;
+
+	public Cuenta(String nombre) {
+		super();
+		valores = new ArrayList<Double>();
+		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public List<Double> getValores() {
+		return valores;
+	}
+
+	public void setValores(List<Double> valores) {
+		this.valores = valores;
+	}
+
+}
+
+```  
 
 ## Agregado del nuevo módulo  
 
@@ -261,6 +300,12 @@ No olvidemos que ahora tenemos que agregar este nuevo módulo al **PanelPestania
 		agregarPestania(panelProcesoPersonalizado, "Proceso personalizado");
 	}
 ```  
+
+## Probar el código  
+Para esta prueba, podemos descargar el Excel que yo usé descargándolo de [acá](excels/Original.xlsx).  
+
+## Código completo  
+Podes descargar el código completo de [acá](sources/ExcelPFT_12.zip).  
 
 ## Conclusión  
 
