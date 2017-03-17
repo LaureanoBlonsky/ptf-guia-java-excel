@@ -1,4 +1,6 @@
-# Búsqueda dentro de un Excel  
+(8. Buenas prácticas) [<- Atrás](8-MVC.md) || [Siguiente ->](10-buscar-y-reemplazar.md) (10. Búsqueda y reemplazo dentro de uno o mas Excels)  
+
+# 9. Búsqueda dentro de un Excel  
 
 Recordemos lo que nos propusimos:  
 1. Crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora. **(HECHO!)**  
@@ -731,3 +733,6 @@ public class PanelSeleccionArchivo extends HBox{
 
 }
 ```  
+
+# [Indice](../README.md#indice)  
+(8. Buenas prácticas) [<- Atrás](8-MVC.md) || [Siguiente ->](10-buscar-y-reemplazar.md) (10. Búsqueda y reemplazo dentro de uno o mas Excels)  
