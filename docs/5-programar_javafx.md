@@ -1,4 +1,8 @@
-# Dos formas de programar con JavaFX
+(4. Código Base del programa) [<- Atrás](4-codigo-por-defecto.md) || [Siguiente ->](6-primer-interfaz.md) (6. Nuestra primer Interfaz)  
+
+# 5. Programar con JavaFX  
+
+## Dos formas de programar con JavaFX  
 
  Como decíamos antes, JavaFX es una librería que sirve para crear la interfaz, o sea  la parte visual de nuestra aplicación. Es decir, las ventanas, títulos, botones, cajones de texto, tablas con información, etc., etc.
 
@@ -27,3 +31,6 @@
 **Root Pane (panel raíz)**: cada Scene va a tener un Panel Raíz, que no es mas que un panel de base donde se pondrán todos los elementos: cajas de texto, botones, etc. Hay distintos tipos de Root Pane. Los distintos tipos sirven para indicarle a JavaFX de que forma se van a disponer los elementos visuales. Por ejemplo, si usamos VBox, todos los elementos que pongamos en pantalla se posicionarán uno debajo del otro. Si usamos HBox, cada elemento se pondrá al lado del otro, de forma horizontal.  
 
 ![Imagen new javafxproject](https://laureanoblonsky.github.io/ptf-guia-java-excel/docs/images/layouts.png)  
+
+# [Indice](../README.md#indice)  
+(4. Código Base del programa) [<- Atrás](4-codigo-por-defecto.md) || [Siguiente ->](6-primer-interfaz.md) (6. Nuestra primer Interfaz)    
