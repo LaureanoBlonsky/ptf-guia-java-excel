@@ -305,7 +305,7 @@ No olvidemos que ahora tenemos que agregar este nuevo módulo al **PanelPestania
 Para esta prueba, podemos descargar el Excel que yo usé descargándolo de [acá](excels/Original.xlsx).  
 
 ## Código completo  
-Podes descargar el código completo de [acá](../sources/ExcelPFT_12.zip).  
+Podes descargar el código completo de [acá](../sources/ExcelPTF_12.zip).  
 
 ## Conclusión  
 
