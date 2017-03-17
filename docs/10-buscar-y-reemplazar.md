@@ -547,7 +547,7 @@ Ese código, cuando uno haga doble click en una fila de la tabla, hará que el e
 ![asd](images/reemplazofinal.png)  
 
 ## Código completo PanelBuscarYReemplazar  
-Podes descargar el código completo de [acá](sources/ExcelPFT_8.zip).  
+Podes descargar el código completo de [acá](sources/ExcelPFT_10.zip).  
 
 ```java  
 	package application;
