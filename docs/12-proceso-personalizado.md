@@ -1,4 +1,4 @@
-(11. Unificando la Interfaz con Pestañas) [<- Atrás]((11-pestanas.md))  
+(11. Unificando la Interfaz con Pestañas) [<- Atrás](11-pestanas.md)  
 
 # 12. Un proceso personalizado!  
 
@@ -318,5 +318,5 @@ Se acuerdan cuando vimos [Buenas prácticas](8-MVC.md#buenas-practicas)? Habíam
 Por eso, siempre es fundamental tener el código ordenado y separado en distintas clases, según patrones como [MVC](8-MVC.md#mvc), así nosotros mismos y otros pueden entender lo que escribimos y construir fácilmente sobre eso.  
 
 # [Indice](../README.md#indice)  
-(11. Unificando la Interfaz con Pestañas) [<- Atrás]((11-pestanas.md))   
+(11. Unificando la Interfaz con Pestañas) [<- Atrás](11-pestanas.md)   
 
