@@ -1,4 +1,6 @@
-# Vida y **Handlers** a nuestra Interfaz!
+(6. Nuestra primer Interfaz) [<- Atrás](6-primer-interfaz.md) || [Siguiente ->](8-MVC.md) (8. Buenas prácticas)  
+
+# 7. Vida y **Handlers** a nuestra Interfaz!
 Ahora haremos que se abra una ventana de selección de archivo cuando hagamos click en el *boton*, y se escriba la ruta del archivo seleccionado en *cajonDeTexto*.  
 Este tipo de cosas se resuelven con el uso de los **Handlers**.  
 Los **Handlers** son objetos que están asociados a otro objeto y un **evento**.  
@@ -135,4 +137,8 @@ public class Main extends Application {
 ```
 ## Resultado
 Si hicimos todo bien, deberíamos ver la ventana al hacer click en el *boton* y luego de seleccionar un archivo, ver su ruta en el *cajonDeTexto*.  
-![Imagen](images/dialog_file.png)
+![Imagen](images/dialog_file.png)  
+
+# [Indice](../README.md#indice)  
+(6. Nuestra primer Interfaz) [<- Atrás](6-primer-interfaz.md) || [Siguiente ->](8-MVC.md) (8. Buenas prácticas)  
+
