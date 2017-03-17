@@ -1,4 +1,6 @@
-# Nuestra primer Interfaz
+(5. Programar con JavaFX) [<- Atrás](5-programar_javafx.md) || [Siguiente ->](7-primer-handler.md) (7. Vida y Handlers a nuestra Interfaz)  
+
+# 6. Nuestra primer Interfaz
 ## Veremos como hacer lo siguiente:  
 ![Imagen de interfaz](images/app.png)
 ## Armemos el código!
@@ -118,4 +120,7 @@ public class Main extends Application {
 		launch(args);
 	}
 }
-```
+```  
+
+# [Indice](../README.md#indice)  
+(5. Programar con JavaFX) [<- Atrás](5-programar_javafx.md) || [Siguiente ->](7-primer-handler.md) (7. Vida y Handlers a nuestra Interfaz)  
