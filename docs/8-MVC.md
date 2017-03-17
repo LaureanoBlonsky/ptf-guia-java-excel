@@ -1,4 +1,6 @@
-# Buenas practicas  
+(7. Vida y Handlers a nuestra Interfaz) [<- Atrás](7-primer-handler.md) || [Siguiente ->](9-busqueda.md) (9. Búsqueda dentro de un Excel)  
+
+# 8. Buenas practicas  
 En la programación tenemos siempre muchísima libertad para escribir las cosas a nuestra manera.  
 Por ejemplo, hay infinitas formas de escribir la misma aplicación que estamos haciendo nosotros en esta Guía.  
 Un simple ejemplo podrían ser los nombres de las variables. Yo podría declarar la variable *cajonDeTexto* de varias formas:  
@@ -258,3 +260,6 @@ Pero no!, queremos que todo esté ordenado, así que creamos un método para cad
 ### Conclusión  
 Ahora si... tenemos todo ordenado y listo para seguir construyendo nuestra aplicación sobre una base ahora mas clara!  
 Probá la aplicación. No deberíamos ver ninguna diferencia en el resultado para el usuario. Solo modificamos la organización del código, pero el producto debe ser igual.  
+
+# [Indice](../README.md#indice)  
+(7. Vida y Handlers a nuestra Interfaz) [<- Atrás](7-primer-handler.md) || [Siguiente ->](9-busqueda.md) (9. Búsqueda dentro de un Excel)  
