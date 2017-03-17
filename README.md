@@ -1,5 +1,6 @@
+[Siguiente ->](docs/1-conceptos-previos.md) (1. Conceptos previos)  
+
 # Aplicación de Escritorio para manejo de planillas Excel con Java  
-Autor: Laureano Blonsky, Mentor de Programá tu Futuro, Sede Usuaria  
 
 # Bienvenido a la Guía de Java y Excel!
 
@@ -59,8 +60,8 @@ Empecemos!
   1. [Stage (escenario)](docs/5-programar_javafx.md#la-estructura-de-javafx)  
   2. [Scene (escena)](docs/5-programar_javafx.md#la-estructura-de-javafx)  
   3. [RootPane (panel raíz)](docs/5-programar_javafx.md#la-estructura-de-javafx)  
-6. [Primer Interfaz](docs/6-primer-interfaz.md)  
-7. [Vida a la Interfaz](docs/7-primer-handler.md)  
+6. [Nuesta primer Interfaz](docs/6-primer-interfaz.md)  
+7. [Vida y Handlers a nuestra Interfaz](docs/7-primer-handler.md)  
  1. [Seleccionar un archivo de disco](docs/7-primer-handler.md#filechooser)  
 8. [Buenas prácticas](docs/8-MVC.md)  
  1. [Convenciones](docs/8-MVC.md#convenciones)  
@@ -75,5 +76,4 @@ Empecemos!
 11. [Unificando la interfaz con Pestañas](docs/11-pestanas.md)  
 12. [Un proceso Personalizado!](docs/12-proceso-personalizado.md)    
 
- 
- 
+[Siguiente ->](docs/1-conceptos-previos.md) (1. Conceptos previos)  
