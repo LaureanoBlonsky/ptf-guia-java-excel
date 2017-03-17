@@ -1,5 +1,3 @@
-[Siguiente ->](docs/1-conceptos-previos.md) (1. Conceptos previos)  
-
 # Aplicación de Escritorio para manejo de planillas Excel con Java  
 
 # Bienvenido a la Guía de Java y Excel!
