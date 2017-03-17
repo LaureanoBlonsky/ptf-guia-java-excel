@@ -1,4 +1,6 @@
-# Buscar y reemplazar!
+(9. Búsqueda dentro de un Excel) [<- Atrás](9-busqueda.md) || [Siguiente ->](11-pestanas.md) (11. Unificando la Interfaz con Pestañas)  
+
+# 10. Buscar y reemplazar!
 
 Recordemos lo que nos propusimos:  
 1. Crear una interfaz sencilla que nos permita seleccionar un Excel que esté en nuestra computadora. **(HECHO!)**  
@@ -677,3 +679,6 @@ public class PanelBuscarYReemplazar extends BorderPane{
 	
 }
 ```  
+
+# [Indice](../README.md#indice)  
+(9. Búsqueda dentro de un Excel) [<- Atrás](9-busqueda.md) || [Siguiente ->](11-pestanas.md) (11. Unificando la Interfaz con Pestañas)  
