@@ -1,4 +1,6 @@
-# Análisis del código principal
+(3. Creación del esqueleto del programa) [<- Atrás](3-creacion-programa.md) || [Siguiente ->](5-programar_javafx.md) (5. Programar con JavaFX)  
+
+# 4. Código Base del programa  
 Cuando creamos el proyecto, se nos creó un código y estructura base con una ventana vacía, lista para que le agreguemos los componentes que queramos.   
 
 Lo principal lo encontramos en la clase **Main.java**.
@@ -113,3 +115,6 @@ Declaración del método main. Es el primer método que se ejecuta al iniciar la
 	}
 ```
 Se ejecuta el método “launch”. Éste método dispara toda una serie de tareas internas de Java para preparar toda la aplicaicón, que terminan llamando y ejecutando al método “start” de la linea 10, en el cual nosotros comenzamos a armar la aplicación con el código dentro de ese método. 
+
+# [Indice](../README.md#indice)  
+(3. Creación del esqueleto del programa) [<- Atrás](3-creacion-programa.md) || [Siguiente ->](5-programar_javafx.md) (5. Programar con JavaFX)    
