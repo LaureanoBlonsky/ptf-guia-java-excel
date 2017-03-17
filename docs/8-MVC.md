@@ -258,7 +258,7 @@ Pero no!, queremos que todo esté ordenado, así que creamos un método para cad
 3. crearHandlers();  
 
 ### Código completo  
-Podes descargar el código completo de [acá](sources/ExcelPFT_8.zip).  
+Podes descargar el código completo de [acá](../sources/ExcelPTF_8.zip).  
 
 ### Conclusión  
 Ahora si... tenemos todo ordenado y listo para seguir construyendo nuestra aplicación sobre una base ahora mas clara!  
