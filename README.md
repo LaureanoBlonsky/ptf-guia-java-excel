@@ -32,11 +32,11 @@ En el siguiente orden:
 
 ## Imágenes de la aplicación final  
 La aplicación final lucirá de la siguiente forma:  
-![a](docs/images/procesopersonalizado_prueba.png)  
-![a](docs/images/pestanias.png)  
+![a](docs/images/pant_1.png)  
+![a](docs/images/pant_2.png)  
+![a](docs/images/pant_3.png)  
 ![a](docs/images/reemplazofinal.png)  
-![a](docs/images/pestanias3.png)  
-![a](docs/images/pestanias2.png)  
+![a](docs/images/pant_4.png)  
 
 Empecemos!
 
